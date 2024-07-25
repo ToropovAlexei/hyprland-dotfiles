@@ -15,20 +15,13 @@ cp ./hyprland.conf /home/$current_user/.config/hypr/hyprland.conf || {
     exit 1
 }
 
-# Copy the wofi directory
-cp -r ./wofi /home/$current_user/.config || {
-    echo "Failed to copy wofi directory."
-    exit 1
-}
+# Define the directories to copy
+directories=("wofi" "waybar" "kitty")
 
-# Copy the waybar directory
-cp -r ./waybar /home/$current_user/.config || {
-    echo "Failed to copy waybar directory."
-    exit 1
-}
-
-# Copy the kitty directory
-cp -r ./kitty /home/$current_user/.config || {
-    echo "Failed to copy kitty directory."
-    exit 1
-}
+# Copy the directories
+for directory in "${directories[@]}"; do
+    cp -r "$directory" "/home/$current_user/.config" || {
+        echo "Failed to copy $directory directory."
+        exit 1
+    }
+done
