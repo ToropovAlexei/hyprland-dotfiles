@@ -10,6 +10,7 @@ fi
 current_user=$USER
 
 # Copy the hyprland.conf file
+echo "Copying hyprland.conf file..."
 cp ./hyprland.conf /home/$current_user/.config/hypr/hyprland.conf || {
     echo "Failed to copy hyprland.conf file."
     exit 1
@@ -20,8 +21,11 @@ directories=("wofi" "waybar" "kitty")
 
 # Copy the directories
 for directory in "${directories[@]}"; do
+    echo "Copying $directory directory..."
     cp -r "$directory" "/home/$current_user/.config" || {
         echo "Failed to copy $directory directory."
         exit 1
     }
 done
+
+echo "Config files copied successfully."
