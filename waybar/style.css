@@ -52,7 +52,9 @@ tooltip {
 #temperature,
 #workspaces,
 #tray,
-#backlight {
+#backlight,
+#cpu,
+#memory {
     padding: 0px 14px;
 }
 
@@ -96,6 +98,6 @@ tooltip {
     color: #cba6f7;
 }
 
-#battery {
+#battery, #memory {
     color: #a6e3a1;
 }
