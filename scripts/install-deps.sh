@@ -2,7 +2,7 @@
 
 sudo pacman -Syu --noconfirm
 yay -S --noconfirm --needed hyprland-git \
-    nerd-fonts \
+    nerd-fonts noto-fonts \
     nvidia nvidia-utils egl-wayland \
     wofi waybar kitty \
     discord google-chrome \
@@ -10,7 +10,8 @@ yay -S --noconfirm --needed hyprland-git \
     grim slurp wl-clipboard \
     wireplumber pipewire \
     networkmanager-openconnect \
-    dolphin
+    dolphin polkit-kde-agent \
+    vlc
 
 yay -S --noconfirm zsh zsh-theme-powerlevel10k-git
 echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc

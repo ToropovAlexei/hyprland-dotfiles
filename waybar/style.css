@@ -13,6 +13,14 @@ window#waybar {
     color: #cdd6f4;
 }
 
+.modules-left {
+    padding-left: 10px;
+}
+
+.modules-right {
+    padding-right: 10px;
+}
+
 tooltip {
     background: #010409;
     border-radius: 10px;
@@ -43,51 +51,16 @@ tooltip {
     color: #cdd6f4;
 }
 
-#window,
-#clock,
-#battery,
-#pulseaudio,
-#network,
-#bluetooth,
-#temperature,
-#workspaces,
-#tray,
-#backlight,
-#cpu,
-#memory {
-    padding: 0px 14px;
-}
-
 #temperature.critical {
     color: #eba0ac;
 }
 
-#tray {
-    margin-right: 10px;
-}
-
-#workspaces {
-    margin-left: 10px;
-    padding-right: 0px;
-    padding-left: 5px;
-}
-
-#window {
-    margin-left: 60px;
-    margin-right: 60px;
-}
-
 #clock {
     color: #fab387;
-    margin-right: 14px;
 }
 
 #network {
     color: #f9e2af;
-}
-
-#bluetooth {
-    color: #89b4fa;
 }
 
 #pulseaudio {
@@ -98,10 +71,12 @@ tooltip {
     color: #cba6f7;
 }
 
-#battery, #memory {
+#memory {
     color: #a6e3a1;
 }
 
-#cpu {
-    min-width: 40px;
+#language {
+    color: #94e2d5;
+    font-size: 18px;
+    padding: 0 0 2px;
 }

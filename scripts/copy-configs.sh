@@ -16,6 +16,12 @@ cp ./hyprland.conf /home/$current_user/.config/hypr/hyprland.conf || {
     exit 1
 }
 
+echo "Copying screen-sharing-fix.sh file..."
+cp ./screen-sharing-fix.sh ~/scripts || {
+    echo "Failed to copy screen-sharing-fix.sh file."
+    exit 1
+}
+
 # Define the directories to copy
 directories=("wofi" "waybar" "kitty")
 
