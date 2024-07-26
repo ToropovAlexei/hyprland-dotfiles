@@ -141,7 +141,8 @@
         "format-critical": "{temperatureC}°C "
     },
     "hyprland/language": {
-        "format": "{short}"
+        "format": "{short}",
+        "min-length": 3
     },
     "network": {
         "interval": 10,
