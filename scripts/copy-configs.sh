@@ -28,4 +28,22 @@ for directory in "${directories[@]}"; do
     }
 done
 
+echo "Copying zshrc file..."
+cp ./.zshrc ~/.zshrc || {
+    echo "Failed to copy zshrc file."
+    exit 1
+}
+
+echo "Copying p10k.zsh file..."
+cp ./.p10k.zsh ~/.p10k.zsh || {
+    echo "Failed to copy p10k.zsh file."
+    exit 1
+}
+
+echo "Copying vscode settings.json file..."
+cp ./settings.json ~/.config/Code/User/settings.json || {
+    echo "Failed to copy vscode settings.json file."
+    exit 1
+}
+
 echo "Config files copied successfully."

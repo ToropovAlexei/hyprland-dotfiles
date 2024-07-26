@@ -1,0 +1,7 @@
+{
+    "workbench.iconTheme": "vscode-icons",
+    "editor.fontFamily": "'Font Awesome 5 Free', 'Material Design Icons', 'Fira Code', 'monospace'",
+    "git.enableSmartCommit": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.fontFamily": "MesloLGM Nerd Font"
+}
