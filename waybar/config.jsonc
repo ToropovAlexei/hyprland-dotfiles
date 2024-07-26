@@ -139,8 +139,9 @@
         "critical-threshold": 80,
         "format-critical": "{temperatureC}°C "
     },
-    "language": {
-        "format": "{icon} {lang}"
+    "sway/language": {
+        "format": "{}",
+        "on-click": "swaymsg input type:keyboard xkb_switch_layout next"
     },
     "network": {
         "interval": 10,

@@ -101,3 +101,7 @@ tooltip {
 #battery, #memory {
     color: #a6e3a1;
 }
+
+#cpu {
+    min-width: 40px;
+}
