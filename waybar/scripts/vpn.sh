@@ -16,4 +16,4 @@ get_vpn_text() {
     fi
 }
 
-echo "{\"text\": \"$(get_vpn_text)\"}"
+echo $(get_vpn_text)
