@@ -29,7 +29,7 @@ mkdir -p ~/.config/fontconfig && cp ./fonts.conf ~/.config/fontconfig/ || {
 # }
 
 # Define the directories to copy
-directories=("wofi" "waybar" "kitty")
+directories=("wofi" "waybar" "kitty" "rofi")
 
 # Copy the directories
 for directory in "${directories[@]}"; do
