@@ -10,8 +10,7 @@ yay -S --noconfirm --needed hyprland-git \
     grim slurp wl-clipboard \
     wireplumber pipewire \
     networkmanager-openconnect \
-    dolphin polkit-kde-agent \
-    vlc
+    dolphin polkit-kde-agent
 
 yay -S --noconfirm zsh zsh-theme-powerlevel10k-git
 echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
