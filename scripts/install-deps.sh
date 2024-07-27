@@ -8,7 +8,7 @@ yay -S --noconfirm --needed hyprland-git \
     discord google-chrome \
     zed-git visual-studio-code-bin \
     grim slurp wl-clipboard \
-    wireplumber pipewire \
+    wireplumber pipewire xdg-desktop-portal-hyprland-git \
     networkmanager-openconnect \
     dolphin polkit-kde-agent
 

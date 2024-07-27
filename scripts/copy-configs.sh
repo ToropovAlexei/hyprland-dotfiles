@@ -46,10 +46,4 @@ cp ./.p10k.zsh ~/.p10k.zsh || {
     exit 1
 }
 
-echo "Copying vscode settings.json file..."
-cp ./settings.json ~/.config/Code/User/settings.json || {
-    echo "Failed to copy vscode settings.json file."
-    exit 1
-}
-
 echo "Config files copied successfully."
