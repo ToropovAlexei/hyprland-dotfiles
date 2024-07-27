@@ -11,7 +11,7 @@ yay -S --noconfirm --needed hyprland-git \
     wireplumber pipewire xdg-desktop-portal-hyprland-git \
     networkmanager-openconnect \
     dolphin polkit-kde-agent dunst \
-    networkmanager-openconnect
+    networkmanager-openconnect openssh
 
 yay -S --noconfirm zsh zsh-theme-powerlevel10k-git
 echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
