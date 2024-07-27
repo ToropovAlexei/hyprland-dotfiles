@@ -9,7 +9,8 @@
     "height": 32,
     "spacing": 12,
     "modules-left": [
-        "hyprland/workspaces"
+        "hyprland/workspaces",
+        "custom/vpn"
     ],
     "modules-center": [
         "hyprland/window"
@@ -32,6 +33,12 @@
             "(.*) - Google Chrome": "🌎 $1",
             "(.*) - Code - OSS": "🔨 $1"
         }
+    },
+    "custom/vpn": {
+        "format": "{}",
+        "interval": 10,
+        "exec": "bash ~/.config/waybar/scripts/vpn.sh",
+        "on-click": "bash ~/.config/waybar/scripts/connect.sh"
     },
     "custom/weather" : {
         "tooltip" : true,

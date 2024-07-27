@@ -1,0 +1,1 @@
+echo 'MY_PASS' | sudo openconnect --protocol=anyconnect VPN_ADDR --user='MY_EMAIL' --authgroup=internal --http-auth=Basic --passwd-on-stdin
