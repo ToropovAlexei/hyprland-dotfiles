@@ -17,10 +17,9 @@
     "modules-right": [
         "tray",
         "network",
-        "temperature",
+        "custom/weather",
         "cpu",
         "memory",
-        // "backlight",
         "pulseaudio",
         // "pulseaudio#microphone",
         "hyprland/language",
@@ -33,6 +32,13 @@
             "(.*) - Google Chrome": "🌎 $1",
             "(.*) - Code - OSS": "🔨 $1"
         }
+    },
+    "custom/weather" : {
+        "tooltip" : true,
+        "format" : "{}",
+        "interval" : 600,
+        "exec" : "python ~/.config/waybar/scripts/weather.py",
+        "return-type" : "json"
     },
     "hyprland/workspaces": {
         "all-outputs": true,

@@ -13,7 +13,7 @@ yay -S --noconfirm --needed hyprland-git \
     dolphin polkit-kde-agent dunst \
     networkmanager-openconnect openssh \
     zsh zsh-theme-powerlevel10k-git \
-    telegram-desktop
+    telegram-desktop python-pip python-requests
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 

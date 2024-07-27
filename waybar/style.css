@@ -3,7 +3,7 @@
     border-radius: 0;
     font-family: "JetBrainsMono Nerd Font, monospace";
     font-weight: bold;
-    font-size: 16px;
+    font-size: 15px;
     min-height: 0;
 }
 
@@ -78,5 +78,9 @@ tooltip {
 #language {
     color: #94e2d5;
     font-size: 18px;
-    padding: 0 0 2px;
+    padding: 0 0 4px;
+}
+
+#custom-weather {
+    color: #f3e670;
 }
