@@ -11,7 +11,9 @@ yay -S --noconfirm --needed hyprland-git \
     wireplumber pipewire xdg-desktop-portal-hyprland-git \
     networkmanager-openconnect \
     dolphin polkit-kde-agent dunst \
-    networkmanager-openconnect openssh
+    networkmanager-openconnect openssh \
+    zsh zsh-theme-powerlevel10k-git
 
-yay -S --noconfirm zsh zsh-theme-powerlevel10k-git
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc

@@ -16,11 +16,17 @@ mkdir -p ~/.config/hypr && cp ./hyprland.conf ~/.config/hypr/ || {
     exit 1
 }
 
-echo "Copying screen-sharing-fix.sh file..."
-mkdir -p ~/scripts && cp ./screen-sharing-fix.sh ~/scripts || {
-    echo "Failed to copy screen-sharing-fix.sh file."
+echo "Copying fonts.conf file..."
+mkdir -p ~/.config/fontconfig && cp ./fonts.conf ~/.config/fontconfig/ || {
+    echo "Failed to copy fonts.conf file."
     exit 1
 }
+
+# echo "Copying screen-sharing-fix.sh file..."
+# mkdir -p ~/scripts && cp ./screen-sharing-fix.sh ~/scripts || {
+#     echo "Failed to copy screen-sharing-fix.sh file."
+#     exit 1
+# }
 
 # Define the directories to copy
 directories=("wofi" "waybar" "kitty")
