@@ -12,7 +12,8 @@ yay -S --noconfirm --needed hyprland-git \
     networkmanager-openconnect \
     dolphin polkit-kde-agent dunst \
     networkmanager-openconnect openssh \
-    zsh zsh-theme-powerlevel10k-git
+    zsh zsh-theme-powerlevel10k-git \
+    telegram-desktop
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
