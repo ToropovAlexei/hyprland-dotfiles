@@ -22,11 +22,17 @@ mkdir -p ~/.config/fontconfig && cp ./fonts.conf ~/.config/fontconfig/ || {
     exit 1
 }
 
-# echo "Copying screen-sharing-fix.sh file..."
-# mkdir -p ~/scripts && cp ./screen-sharing-fix.sh ~/scripts || {
-#     echo "Failed to copy screen-sharing-fix.sh file."
-#     exit 1
-# }
+echo "Copying screen-sharing-fix.sh file..."
+mkdir -p ~/scripts && cp ./screen-sharing-fix.sh ~/scripts/ || {
+    echo "Failed to copy screen-sharing-fix.sh file."
+    exit 1
+}
+
+echo "Copying hyprland-portals.conf file..."
+mkdir -p ~/.config/xdg-desktop-portal && cp ./hyprland-portals.conf ~/.config/xdg-desktop-portal/ || {
+    echo "Failed to copy hyprland-portals.conf file."
+    exit 1
+}
 
 # Define the directories to copy
 directories=("wofi" "waybar" "kitty" "rofi")

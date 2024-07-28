@@ -9,6 +9,7 @@ yay -S --noconfirm --needed hyprland-git \
     zed-git visual-studio-code-bin \
     grim slurp wl-clipboard \
     wireplumber pipewire xdg-desktop-portal-hyprland-git \
+    xdg-desktop-portal-gtk \
     networkmanager-openconnect \
     dolphin polkit-kde-agent dunst \
     networkmanager-openconnect openssh \
