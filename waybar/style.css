@@ -84,3 +84,14 @@ tooltip {
 #custom-weather {
     color: #f3e670;
 }
+
+#custom-vpn {
+    font-size: 13px;
+    border-radius: 999px;
+    padding: 4px 10px 0;
+}
+
+#custom-vpn.active {
+    background: #4221B8;
+    color: #f9e2af;
+}

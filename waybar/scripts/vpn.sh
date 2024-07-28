@@ -10,9 +10,9 @@ is_vpn_connected() {
 
 get_vpn_text() {
     if is_vpn_connected; then
-        echo "Connected to VPN"
+        echo '{"text": "<span>NVK 🖧 VPN</span>", "class": "active"}'
     else
-        echo "Not connected to VPN"
+        echo '{"text": "<span>NVK 🖧 VPN</span>"}'
     fi
 }
 
