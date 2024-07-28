@@ -94,4 +94,5 @@ tooltip {
 #custom-vpn.active {
     background: #4221B8;
     color: #f9e2af;
+    padding: 0 10px;
 }

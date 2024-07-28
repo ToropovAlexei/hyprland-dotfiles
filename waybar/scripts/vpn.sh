@@ -10,7 +10,7 @@ is_vpn_connected() {
 
 get_vpn_text() {
     if is_vpn_connected; then
-        echo '{"text": "<span>NVK 🖧 VPN</span>", "class": "active"}'
+        echo '{"text": "<span>NVK \uf427 ‏ VPN</span>", "class": "active"}'
     else
         echo '{"text": "<span>NVK 🖧 VPN</span>"}'
     fi
