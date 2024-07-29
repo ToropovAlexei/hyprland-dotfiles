@@ -20,3 +20,4 @@ code --install-extension twxs.cmake # CMake
 code --install-extension ms-vscode.cmake-tools # CMake tools
 code --install-extension naumovs.color-highlight # Color Highlight
 code --install-extension rvest.vs-code-prettier-eslint # Prettier ESLint
+code --install-extension llvm-vs-code-extensions.vscode-clangd # C/C++

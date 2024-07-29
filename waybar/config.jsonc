@@ -21,6 +21,7 @@
         "custom/weather",
         "cpu",
         "memory",
+        "custom/gpu",
         "pulseaudio",
         // "pulseaudio#microphone",
         "hyprland/language",
@@ -79,6 +80,11 @@
     "cpu": {
         "interval": 10,
         "format": "{usage}%  "
+    },
+    "custom/gpu": {
+        "format": "{}% \ue266 ",
+        "exec" : "bash ~/.config/waybar/scripts/gpu.sh",
+        "interval": 5
     },
     "backlight": {
         "device": "intel_backlight",
