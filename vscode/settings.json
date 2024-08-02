@@ -1,8 +1,46 @@
 {
-    "workbench.iconTheme": "vscode-icons",
-    "editor.fontFamily": "'Font Awesome 5 Free', 'Material Design Icons', 'Fira Code', 'monospace'",
-    "git.enableSmartCommit": true,
-    "security.workspace.trust.untrustedFiles": "open",
-    "terminal.integrated.fontFamily": "MesloLGM Nerd Font",
-    "files.autoSave": "afterDelay"
+  "workbench.iconTheme": "vscode-icons",
+  "editor.fontFamily": "'Font Awesome 5 Free', 'Material Design Icons', 'Fira Code', 'monospace'",
+  "git.enableSmartCommit": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.fontFamily": "MesloLGM Nerd Font",
+  "files.autoSave": "afterDelay",
+  "codeium.enableConfig": {
+    "*": true,
+    "plaintext": true,
+    "properties": true,
+    "markdown": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "cmake.pinnedCommands": [
+    "workbench.action.tasks.configureTaskRunner",
+    "workbench.action.tasks.runTask"
+  ],
+  "git.autorefresh": true,
+  "editor.formatOnSave": true,
+  "eslint.format.enable": true,
+  "eslint.codeActionsOnSave.mode": "all",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.density.editorTabHeight": "compact",
+  "editor.accessibilitySupport": "off",
+  "explorer.compactFolders": false
 }
