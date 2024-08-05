@@ -14,7 +14,8 @@ yay -S --noconfirm --needed hyprland-git \
     dolphin polkit-kde-agent dunst \
     networkmanager-openconnect openssh \
     zsh zsh-theme-powerlevel10k-git \
-    telegram-desktop python-pip python-requests net-tools
+    telegram-desktop python-pip python-requests net-tools \
+    sshpass wlogout
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
