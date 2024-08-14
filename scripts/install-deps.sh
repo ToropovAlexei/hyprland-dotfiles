@@ -5,7 +5,7 @@ yay -S --noconfirm --needed hyprland-git \
     nerd-fonts noto-fonts \
     nvidia nvidia-utils egl-wayland \
     wofi waybar kitty \
-    discord google-chrome \
+    firefox google-chrome discord \
     zed-git visual-studio-code-bin \
     grim slurp wl-clipboard \
     wireplumber pipewire xdg-desktop-portal-hyprland-git \
@@ -15,7 +15,8 @@ yay -S --noconfirm --needed hyprland-git \
     networkmanager-openconnect openssh \
     zsh zsh-theme-powerlevel10k-git \
     telegram-desktop python-pip python-requests net-tools \
-    sshpass wlogout swappy grimblast
+    sshpass wlogout swappy grimblast \
+    gimp
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
