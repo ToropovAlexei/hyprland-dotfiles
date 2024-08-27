@@ -1,24 +1,18 @@
 {
   "layer": "top",
   "position": "top",
-  "margin": "5 10 0",
+  "margin": "8 8 0",
   "mod": "dock",
   "exclusive": true,
   "passthrough": false,
   "gtk-layer-shell": true,
-  "height": 32,
   "spacing": 12,
-  "modules-left": ["hyprland/workspaces", "custom/vpn"],
-  "modules-center": [],
+  "modules-left": ["custom/vpn", "cpu", "memory", "custom/gpu", "network"],
+  "modules-center": ["hyprland/workspaces"],
   "modules-right": [
     "tray",
-    "network",
     "custom/weather",
-    "cpu",
-    "memory",
-    "custom/gpu",
     "pulseaudio",
-    // "pulseaudio#microphone",
     "hyprland/language",
     "clock"
   ],
@@ -57,7 +51,7 @@
     "spacing": 10
   },
   "clock": {
-    "format": "{:%d.%m %H:%M}",
+    "format": " {:%H:%M  %d.%m}",
     "tooltip-format": "{calendar}",
     "calendar": {
       "format": {
