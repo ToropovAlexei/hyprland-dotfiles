@@ -1,14 +1,14 @@
 #!/bin/bash
 
 sudo pacman -Syu --noconfirm
-yay -S --noconfirm --needed hyprland-git \
+yay -S --noconfirm --needed hyprland \
     nerd-fonts noto-fonts \
     nvidia nvidia-utils egl-wayland \
     wofi waybar kitty \
     firefox google-chrome discord \
-    zed-git visual-studio-code-bin \
+    zed visual-studio-code-bin \
     grim slurp wl-clipboard \
-    wireplumber pipewire xdg-desktop-portal-hyprland-git \
+    wireplumber pipewire xdg-desktop-portal-hyprland \
     xdg-desktop-portal-gtk \
     networkmanager-openconnect \
     dolphin polkit-kde-agent dunst \

@@ -9,7 +9,7 @@
   "height": 32,
   "spacing": 12,
   "modules-left": ["hyprland/workspaces", "custom/vpn"],
-  "modules-center": ["hyprland/window"],
+  "modules-center": [],
   "modules-right": [
     "tray",
     "network",
@@ -57,7 +57,7 @@
     "spacing": 10
   },
   "clock": {
-    "format": "{:%H:%M}",
+    "format": "{:%d.%m %H:%M}",
     "tooltip-format": "{calendar}",
     "calendar": {
       "format": {
