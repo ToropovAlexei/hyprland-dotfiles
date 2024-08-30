@@ -16,7 +16,7 @@ yay -S --noconfirm --needed hyprland \
     zsh zsh-theme-powerlevel10k-git \
     telegram-desktop python-pip python-requests net-tools \
     sshpass wlogout swappy grimblast \
-    gimp
+    gimp imv archlinux-xdg-menu
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
