@@ -27,7 +27,7 @@
   },
   "custom/vpn": {
     "format": "{}",
-    "interval": 10,
+    "interval": 5,
     "return-type": "json",
     "exec": "bash ~/.config/waybar/scripts/vpn.sh",
     "on-click": "bash ~/.config/waybar/scripts/connect.sh"
