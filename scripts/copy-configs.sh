@@ -26,10 +26,7 @@ if [ ! -d "$SOURCE" ]; then
 fi
 
 # Копируем файлы и папки, сохраняем структуру
-rsync -av --ignore-existing "$SOURCE/" "$DESTINATION/"
-
-# Заменяем файлы, если они совпадают
-rsync -av --remove-source-files "$SOURCE/" "$DESTINATION/"
+rsync -av --progress "$SOURCE/" "$DESTINATION/"
 
 echo "Copying zshrc file..."
 cp ./zsh/.zshrc ~/.zshrc || {
