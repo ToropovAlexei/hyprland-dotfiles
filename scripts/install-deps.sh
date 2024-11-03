@@ -22,7 +22,9 @@ yay -S --noconfirm --needed hyprland \
     zsh zsh-theme-powerlevel10k-git \
     telegram-desktop python-pip python-requests net-tools \
     sshpass wlogout swappy grimblast \
-    gimp imv archlinux-xdg-menu btop tracy nodejs rsync
+    gimp imv archlinux-xdg-menu btop tracy nodejs rsync \
+    fastfetch onefetch clang binutils libxkbcommon wayland-protocols \
+    extra-cmake-modules llvm
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
