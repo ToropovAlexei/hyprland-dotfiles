@@ -9,42 +9,27 @@ fi
 # Get the current user
 current_user=$USER
 
-# Copy the hyprland.conf file
-echo "Copying hyprland.conf file..."
-mkdir -p ~/.config/hypr && cp ./hyprland.conf ~/.config/hypr/ || {
-    echo "Failed to copy hyprland.conf file."
-    exit 1
-}
-
-echo "Copying fonts.conf file..."
-mkdir -p ~/.config/fontconfig && cp ./fonts.conf ~/.config/fontconfig/ || {
-    echo "Failed to copy fonts.conf file."
-    exit 1
-}
-
 echo "Copying screen-sharing-fix.sh file..."
 mkdir -p ~/scripts && cp ./screen-sharing-fix.sh ~/scripts/ || {
     echo "Failed to copy screen-sharing-fix.sh file."
     exit 1
 }
 
-echo "Copying hyprland-portals.conf file..."
-mkdir -p ~/.config/xdg-desktop-portal && cp ./hyprland-portals.conf ~/.config/xdg-desktop-portal/ || {
-    echo "Failed to copy hyprland-portals.conf file."
+# Путь к источнику и месту назначения
+SOURCE="./configs"
+DESTINATION="$HOME/.config"
+
+# Проверяем, существует ли источник
+if [ ! -d "$SOURCE" ]; then
+    echo "Директория $SOURCE не найдена."
     exit 1
-}
+fi
 
-# Define the directories to copy
-directories=("wofi" "waybar" "kitty" "rofi")
+# Копируем файлы и папки, сохраняем структуру
+rsync -av --ignore-existing "$SOURCE/" "$DESTINATION/"
 
-# Copy the directories
-for directory in "${directories[@]}"; do
-    echo "Copying $directory directory..."
-    cp -r "$directory" "/home/$current_user/.config" || {
-        echo "Failed to copy $directory directory."
-        exit 1
-    }
-done
+# Заменяем файлы, если они совпадают
+rsync -av --remove-source-files "$SOURCE/" "$DESTINATION/"
 
 echo "Copying zshrc file..."
 cp ./zsh/.zshrc ~/.zshrc || {
