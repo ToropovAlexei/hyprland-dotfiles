@@ -24,7 +24,7 @@ yay -S --noconfirm --needed hyprland \
     sshpass wlogout swappy grimblast \
     gimp imv archlinux-xdg-menu btop tracy nodejs rsync \
     fastfetch onefetch clang binutils libxkbcommon wayland-protocols \
-    extra-cmake-modules llvm
+    extra-cmake-modules llvm noto-fonts-emoji
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
