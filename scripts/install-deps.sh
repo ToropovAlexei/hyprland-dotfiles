@@ -25,7 +25,7 @@ yay -S --noconfirm --needed hyprland \
     gimp imv archlinux-xdg-menu btop tracy nodejs rsync \
     fastfetch onefetch clang binutils libxkbcommon wayland-protocols \
     extra-cmake-modules llvm noto-fonts-emoji notes hyprpicker \
-    tesseract
+    tesseract hyprshot
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
